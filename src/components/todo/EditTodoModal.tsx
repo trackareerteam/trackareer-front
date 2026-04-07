@@ -61,7 +61,7 @@ export default function EditTodoModal({ todo, onClose }: Props) {
 
   return (
     <>
-      <div className="w-80 p-6 shadow-md">
+      <div className="w-full max-w-80 p-6 shadow-md">
         {/* 제목 */}
         <div className="mb-2.5 flex items-start justify-start gap-1">
           <div className="flex-1 flex flex-col items-stretch">

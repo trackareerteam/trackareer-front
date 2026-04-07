@@ -79,10 +79,8 @@ export const useAuthStore = create<AuthStoreType>()(
 
           const userCredential = await signInWithPopup(firebaseAuth, provider);
           const firebaseIdToken = await userCredential.user.getIdToken(true);
-
           const data = await authApi.login(firebaseIdToken);
           set({ auth: data, authReady: true });
-
           await requestMessagingPermission();
         } catch (err) {
           console.error('Login error:', err);

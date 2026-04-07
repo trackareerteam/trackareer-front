@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Firebase를 서버 번들링에서 제외하여 Edge/Workers Runtime의 eval 제한과 충돌 방지
+  serverExternalPackages: ['firebase'],
   turbopack: {
     rules: {
       '*.svg': {

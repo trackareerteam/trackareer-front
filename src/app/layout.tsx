@@ -7,11 +7,6 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://trackareer.com';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  verification: {
-    other: {
-      'naver-site-verification': 'd450bb39a0f82deb9882cad859f5e98d77b49d65',
-    },
-  },
   title: {
     default: '트래커리어 | 취준 웹 다이어리',
     template: '%s | 트래커리어',

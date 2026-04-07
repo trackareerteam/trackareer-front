@@ -8,7 +8,7 @@ export default {
   ],
   theme: {
     extend: {
-      screen: {
+      screens: {
         mobile: '320px',
         tablet: '600px',
         laptop: '1200px',
